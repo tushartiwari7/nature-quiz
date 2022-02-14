@@ -17,16 +17,65 @@ a {
   height: 100vh;
 }
 
-.landing-page {
-  grid-template-rows: auto auto 1fr;
+.header {
+  grid-area: header;
 }
 
-.landing-page > .main {
-  
+.landing-page {
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "header"
+    "title"
+    "main";
+}
+
+.landing-page > .main,
+.options {
   gap: 2rem;
+}
+
+.main {
+  grid-area: main;
 }
 
 .page-center {
   width: 70%;
   margin: 0 auto;
+}
+
+.rounded-circle {
+  border-radius: 999px;
+}
+
+.skip {
+  text-align: end;
+}
+
+.title {
+  grid-area: title;
+}
+
+.question {
+  border-bottom: 1px solid var(--text-color100);
+}
+
+.quiz-page,
+.result-page {
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "header"
+    "title"
+    "main";
+}
+
+.result-page .btn {
+  cursor: no-drop;
+}
+
+.score {
+  color: var(--dark-green);
+}
+
+.result-page > .main {
+  gap: 5rem;
 }
