@@ -1,0 +1,32 @@
+@import url(https://elevate-ui.vercel.app/components/components.css);
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  margin: 0;
+}
+
+.card-title {
+  filter: drop-shadow(4px 6px 4px var(--text-color900));
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.landing-page {
+  grid-template-rows: auto auto 1fr;
+}
+
+.landing-page > .main {
+  
+  gap: 2rem;
+}
+
+.page-center {
+  width: 70%;
+  margin: 0 auto;
+}
