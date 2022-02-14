@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Himalayas - Nature Quiz Application</title>
   <link rel="stylesheet" href="/style.css">
+  <script src="../../index.js" defer></script>
 </head>
 <body class="full-height grid quiz-page">
   <!-- header -->
@@ -19,7 +20,7 @@
     </a>
   </header>
   <h3 class="h3 title my-sm text-center "> Quiz on Himalayas</h3>
-  <main class="main flex flex-center card flex-col page-center p-xs">
+  <main class="main flex flex-center card flex-col page-center p-xs" id="main">
     <!-- question meta data - question no. and score -->
     <div class="flex spread full-width py-md px-sm">
       <p class="h4">Question No. - <span class="h3" >1</span></p>
@@ -39,5 +40,24 @@
       <i class="bi bi-arrow-right"></i>
     </a>
   </main>
+  <div class="modal rounded-s flex flex-col p-md" id="modal">
+    <h3 class="h3 title my-xs">Instructions</h3>
+    <ol class="desc fs-m m-md">
+      <li class="mx-md white">Quiz contains 5 Questions</li>
+      <li class="mx-md white">Every Question is of 4 Marks</li>
+      <li class="mx-md white">For Every Incorrect answer you will lose 1 Mark.</li>
+      <li class="mx-md white">Attempt the quiz without using any unfair means.</li>
+    </ol>
+    <div class="input-group fs-m p-xs">
+      <input type="checkbox" name="t&c" id="t&c">
+      <label for="t&c" class="px-sm"> I agree to obey all <a href="#" class="link">Terms and Conditions</a></label>
+    </div>
+    <div class="btn-group flex">
+      <button class="btn btn-primary px-sm py-xs" id="btn-continue">Continue</button>
+      <a href="/">
+      <button class="btn btn-outline-primary px-sm py-xs" id="btn-quit">Quit</button>
+      </a>
+    </div>
+  </div>
 </body>
 </html>

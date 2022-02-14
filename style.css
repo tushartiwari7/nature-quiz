@@ -21,6 +21,11 @@ a {
   grid-area: header;
 }
 
+.link {
+  color: -webkit-link;
+  text-decoration: underline;
+}
+
 .landing-page {
   grid-template-rows: auto auto 1fr;
   grid-template-areas:
@@ -36,6 +41,18 @@ a {
 
 .main {
   grid-area: main;
+}
+
+div.modal.modal {
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;  
+  height: fit-content;
+}
+.quiz-page > .main {
+  visibility: hidden;
 }
 
 .page-center {
