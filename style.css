@@ -95,4 +95,11 @@ div.modal.modal {
 
 .result-page > .main {
   gap: 5rem;
+  overflow-y: auto;
+  border-top: 1px solid var(--text-color100);
+}
+
+
+.result-page > .main::-webkit-scrollbar {
+  width: 0;
 }
