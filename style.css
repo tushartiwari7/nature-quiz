@@ -21,6 +21,11 @@ a {
   grid-area: header;
 }
 
+.link {
+  color: -webkit-link;
+  text-decoration: underline;
+}
+
 .landing-page {
   grid-template-rows: auto auto 1fr;
   grid-template-areas:
@@ -36,6 +41,19 @@ a {
 
 .main {
   grid-area: main;
+}
+
+div.modal {
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;  
+  height: fit-content;
+  max-width: 80vw;
+}
+.quiz-page > .main {
+  visibility: hidden;
 }
 
 .page-center {
@@ -78,4 +96,20 @@ a {
 
 .result-page > .main {
   gap: 5rem;
+  overflow-y: auto;
+  border-top: 1px solid var(--text-color100);
+}
+
+
+.result-page > .main::-webkit-scrollbar {
+  width: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+  .btn {
+    border-radius: 2rem;
+  }
 }
